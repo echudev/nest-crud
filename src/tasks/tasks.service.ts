@@ -11,7 +11,7 @@ export class TasksService {
     {
       id: '1',
       title: 'primera tarea',
-      description: 'una tarea jaj',
+      description: 'descripción de la tarea',
       status: TaskStatus.PENDING,
     },
   ];
