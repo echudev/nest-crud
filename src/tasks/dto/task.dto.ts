@@ -3,7 +3,7 @@
 
 import { TaskStatus } from '../task.entity';
 import {
-  IsIn,
+  IsEnum,
   IsNotEmpty,
   IsOptional,
   IsString,
@@ -32,6 +32,6 @@ export class UpdateTaskDTO {
 
   @IsString()
   @IsOptional()
-  @IsIn([TaskStatus.DONE, TaskStatus.IN_PROGRES, TaskStatus.PENDING])
+  @IsEnum(TaskStatus)
   status?: TaskStatus;
 }
